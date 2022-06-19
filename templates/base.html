@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <title>Flask</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/main.css')}}">
+    {% block head %}
+    {% endblock %}
+
+</head>
+<body>
+<h1>This is the base HTML</h1>
+{% block body %} {% endblock %}
+</body>
+</html>
